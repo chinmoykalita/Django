@@ -47,7 +47,10 @@ class Image(models.Model):
             return Image.objects.get(id=1)
 
         
+    
+         
     @classmethod
     def search_by_category(cls,search_term):
-        photos = cls.objects.filter(name__icontains=search_term)
-        return photos
+                category = Category.objects.filter(name__icontains=search_term).first()
+                image = cls.objects.filter(category=category)
+                return image
