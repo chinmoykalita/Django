@@ -11,7 +11,11 @@ class Location(models.Model):
 
     def save_location(self):
         self.save()
+    def update_location(self):
+        self.update()
 
+    def delete_location(self):
+        self.delete()
 
 class Category(models.Model):
     name = models.CharField(max_length =30)
@@ -20,6 +24,13 @@ class Category(models.Model):
         return self.name       
     class Meta:
         ordering = ['name']
+
+    def save_category(self):
+        self.save()
+    def update_category(self):
+        self.update()
+    def delete_category(self):
+        self.delete()
 
 
 class Image(models.Model):
@@ -38,6 +49,11 @@ class Image(models.Model):
     def save_image(self):
         self.save()
 
+    def delete_image(self):
+        self.delete()  
+    def update_image(self):
+        self.update() 
+
     @classmethod
     def get_photos(cls,id):
         try:
@@ -54,3 +70,6 @@ class Image(models.Model):
                 category = Category.objects.filter(name__icontains=search_term).first()
                 image = cls.objects.filter(category=category)
                 return image
+
+
+    def filter_by_location(location)        
