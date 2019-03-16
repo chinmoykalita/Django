@@ -16,22 +16,22 @@
 
     <!--Display news Article images  -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-     <img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="250"  width="250">
+    <img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="250"  width="250">
     </div>
-   <button> <a href="/image/{{photos_item.id}}"> Read More</a></button>
-  </div>
-  <!-Some code below--->
+    <button> <a href="/image/{{photos_item.id}}"> Read More</a></button>
+    </div>
+    <!-Some code below--->
 
-  {% empty %}
-  <div class="row">
+    {% empty %}
+    <div class="row">
     <h2 class="text-center">There No photos Items</h2>
-  </div>
+    </div>
   
-  {% endfor %}
+     {% endfor %}
 
-</div>
+   </div>
 
-{% endblock %}
+   {% endblock %}
 
 
 
