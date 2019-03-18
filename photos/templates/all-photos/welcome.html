@@ -16,10 +16,10 @@
 
     <!--Display news Article images  -->
     <!-- <div class="col-md-4"> -->
-    <img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="250"  width="250">
+    <a href="/image/{{photos_item.id}}"><img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="250"  width="250"></a>
     </div>
-    <button type="button" class="btn btn-info"><a href="/image/{{photos_item.id}}"> Read More</a></button>
-    </div>
+    <!-- <button type="button" class="btn btn-info"><a href="/image/{{photos_item.id}}"> Read More</a></button>
+    </div> -->
     <!-Some code below--->
 
     {% empty %}
