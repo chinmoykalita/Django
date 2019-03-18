@@ -34,25 +34,3 @@ def image(request,image_id):
         raise Http404()
     return render(request,"all-photos/image.html", {"image":image})
 
-
-# def search_results(request):
-
-#     if 'location' in request.GET and request.GET["location"]:
-#         search_term = request.GET.get("location")
-#         searched_images = Image.search_by_location(search_term)
-#         message = f"{search_term}"
-
-#         return render(request, 'all-photos/search.html',{"message":message,"images": searched_images})
-
-#     else:
-#         message = "You haven't searched for any term"
-#         return render(request, 'all-photos/search.html',{"message":message})
-
-
-
-# def image(request,image_location):
-#     try:
-#         image = Image.objects.get(location = image_location)
-#     except DoesNotExist:
-#         raise Http404()
-#     return render(request,"all-photos/image.html", {"image":image})
