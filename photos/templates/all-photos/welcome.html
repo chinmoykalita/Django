@@ -10,13 +10,18 @@
 <div class="container">
   <div class="row">
     <!-- displaying photos -->
-    <!-- <div class="col-md-4"> -->
-      <h2 class="name"> {{ photos_item.name }} </h2>
+    <div class="column">
+    <div class="col-md-12">
+      <h2 class="name">{{ photos_item.name }}</h2>
+    </div>
     </div>
 
     <!--Display news Article images  -->
-    <!-- <div class="col-md-4"> -->
-    <a href="/image/{{photos_item.id}}"><img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="250"  width="250"></a>
+    <div class="column"> 
+    <div class="col-md-12">
+    
+    <a href="/image/{{photos_item.id}}"><img src="{{photos_item.image.url}}" class="img-responsive" alt="Image" height="1000"  width="1000"></a>
+    </div>
     </div>
     <!-- <button type="button" class="btn btn-info"><a href="/image/{{photos_item.id}}"> Read More</a></button>
     </div> -->
@@ -28,8 +33,7 @@
     </div>
   
      {% endfor %}
-
-   </div>
+</div>
 </div>
    {% endblock %}
 

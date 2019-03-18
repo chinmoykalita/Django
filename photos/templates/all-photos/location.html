@@ -6,7 +6,7 @@
     {% if images%}
       <h2>Found {{ images|length }} of searched term {{message}}</h2>
     {% else %}
-      <h2> ghjkjjjjjjjjjjjjjjjjjjjjjjjj{{message}}</h2>
+      <h2> {{message}}</h2>
     {% endif %}
 
   </div>
@@ -17,7 +17,7 @@
     {% for image in images %}
       <div class="col-sm-6 col-md-3">
           <h1>{{image.name}}</h1>
-          <a href="url"><img src="{{image.image.url}}"</a>
+          <img src="{{image.image.url}}"
       </div>
     {% endfor %}
   {% endif %}

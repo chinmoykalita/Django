@@ -9,5 +9,16 @@ body{
    
 
 .name{
-  margin-left:5px; 
+ 
+  text-align: center ;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
