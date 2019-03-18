@@ -60,3 +60,16 @@ heroku run python manage.py migrate
 git add .
 git commit -m "Ready to heroku this sucker in the face."
 git push heroku master
+~~~
+### Author
+~~~
+Bayizere christine
+~~~
+### License
+~~~
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+~~~
+### Acknowledgments
+~~~
+~~~
