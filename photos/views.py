@@ -41,7 +41,7 @@ def search_by_location(request):
         message = f"{search_term}"
         return render(request,'all-photos/location.html',{"message":message,"images": searched_images})
     else:
-        message = "You haven't searched for any term"
+        message = "gjkkkkjhgbhjk,lhluihy8"
         return render(request, 'all-photos/location.html',{"message":message})
         
 def image(request,image_id):
